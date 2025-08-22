@@ -1,8 +1,8 @@
 package com.dio.persistence.dao;
 
-import br.com.dio.dto.BoardColumnDTO;
-import br.com.dio.persistence.entity.BoardColumnEntity;
-import br.com.dio.persistence.entity.CardEntity;
+import com.dio.dto.BoardColumnDTO;
+import com.dio.persistence.entity.BoardColumnEntity;
+import com.dio.persistence.entity.CardEntity;
 import com.mysql.cj.jdbc.StatementImpl;
 import lombok.RequiredArgsConstructor;
 

@@ -1,7 +1,7 @@
 package com.dio.persistence.dao;
 
-import br.com.dio.dto.CardDetailsDTO;
-import br.com.dio.persistence.entity.CardEntity;
+import com.dio.dto.CardDetailsDTO;
+import com.dio.persistence.entity.CardEntity;
 import com.mysql.cj.jdbc.StatementImpl;
 import lombok.AllArgsConstructor;
 

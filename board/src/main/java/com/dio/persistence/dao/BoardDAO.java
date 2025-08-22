@@ -1,12 +1,13 @@
 package com.dio.persistence.dao;
 
-import br.com.dio.persistence.entity.BoardEntity;
-import com.mysql.cj.jdbc.StatementImpl;
-import lombok.AllArgsConstructor;
-
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.Optional;
+
+import com.dio.persistence.entity.BoardEntity;
+import com.mysql.cj.jdbc.StatementImpl;
+
+import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
 public class BoardDAO {
