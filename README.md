@@ -39,4 +39,40 @@ Projeto DIO Board de tarefas desenvolvido com **Spring Boot**, **Java 21** e **M
 </dependency>
 ```
 
+```mermaid
+---
+config:
+  layout: dagre
+title: Tasks Board
+---
+classDiagram
+direction LR
+class Board {
+    +id: long
+    +name: string
+}
+class BoardColumn {
+    +id: long
+    +name: string
+    +kind: string
+    +order: int
+}
+class Card {
+    +id: long
+    +title: string
+    +description: string
+    +createdAt: OffsetDateTime
+}
+class Block {
+    +id: long
+    +blockCause: string
+    +unblockCause: string
+    +blockIn: OffsetDateTime
+    +unblockIn: OffsetDateTime
+}
+Board "1" -- "1..*" BoardColumn
+BoardColumn "1" -- "1..*" Card
+Card "1" -- "1..n" Block
+```
+
 
